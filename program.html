@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Kerja - PKS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/main.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo PKS" class="logo-img">
+                    <div class="logo-text">
+                        <h1>PATROLI KEAMANAN SEKOLAH</h1>
+                        <p>SMK NEGERI 8 KAB.TANGERANG</p>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+                    <li><a href="struktur.html"><i class="fas fa-sitemap"></i> Struktur</a></li>
+                    <li><a href="anggota.html"><i class="fas fa-users"></i> Anggota</a></li>
+                    <li><a href="program.html" class="active"><i class="fas fa-calendar-alt"></i> Program</a></li>
+                    <li><a href="galeri.html"><i class="fas fa-images"></i> Galeri</a></li>
+                    <li><a href="dokumentasi.html"><i class="fas fa-file-alt"></i> Dokumentasi</a></li>
+                    <li><a href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Program Kerja PKS</h1>
+            <p>Rencana kegiatan dan agenda Patroli Keamanan Sekolah periode 2023/2024</p>
+        </div>
+    </section>
+
+    <!-- Kalender Kegiatan -->
+    <section class="calendar-section">
+        <div class="container">
+            <h2 class="section-title">Kalender Kegiatan</h2>
+            <p class="section-subtitle">Jadwal lengkap kegiatan PKS. Klik tanggal untuk detail.</p>
+            
+            <div class="calendar-container">
+                <div id="calendar"></div>
+            </div>
+            
+            <div class="calendar-legends">
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: #8B4513;"></span>
+                    <span>Latihan Rutin</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: #D2691E;"></span>
+                    <span>Kegiatan Khusus</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: #28a745;"></span>
+                    <span>Evaluasi</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: #007bff;"></span>
+                    <span>Rapat</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: #ffc107;"></span>
+                    <span>Event Sekolah</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Kerja per Bulan -->
+    <section class="program-bulanan">
+        <div class="container">
+            <h2 class="section-title">Program Bulanan</h2>
+            <p class="section-subtitle">Rincian kegiatan berdasarkan bulan</p>
+            
+            <div class="month-tabs">
+                <button class="month-tab active" data-month="januari">Januari</button>
+                <button class="month-tab" data-month="februari">Februari</button>
+                <button class="month-tab" data-month="maret">Maret</button>
+                <button class="month-tab" data-month="april">April</button>
+                <button class="month-tab" data-month="mei">Mei</button>
+                <button class="month-tab" data-month="juni">Juni</button>
+                <button class="month-tab" data-month="juli">Juli</button>
+                <button class="month-tab" data-month="agustus">Agustus</button>
+                <button class="month-tab" data-month="september">September</button>
+                <button class="month-tab" data-month="oktober">Oktober</button>
+                <button class="month-tab" data-month="november">November</button>
+                <button class="month-tab" data-month="desember">Desember</button>
+            </div>
+            
+            <div class="program-content">
+                <div class="month-program active" id="januari">
+                    <div class="program-header">
+                        <h3>Program Januari 2023</h3>
+                        <div class="program-stats">
+                            <span class="stat"><i class="fas fa-calendar-check"></i> 8 Kegiatan</span>
+                            <span class="stat"><i class="fas fa-check-circle"></i> 75% Selesai</span>
+                        </div>
+                    </div>
+                    
+                    <div class="program-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">1 Jan</div>
+                            <div class="timeline-content">
+                                <h4>Rapat Perdana</h4>
+                                <p>Rapat pembukaan kegiatan PKS tahun 2023</p>
+                                <div class="timeline-meta">
+                                    <span><i class="fas fa-clock"></i> 09:00 - 11:00</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Ruang PKS</span>
+                                    <span class="status selesai">Selesai</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">8-10 Jan</div>
+                            <div class="timeline-content">
+                                <h4>Masa Orientasi Anggota Baru</h4>
+                                <p>Pengenalan organisasi dan pelatihan dasar</p>
+                                <div class="timeline-meta">
+                                    <span><i class="fas fa-clock"></i> 14:00 - 17:00</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Lapangan Sekolah</span>
+                                    <span class="status selesai">Selesai</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">15 Jan</div>
+                            <div class="timeline-content">
+                                <h4>Pelantikan Anggota Baru</h4>
+                                <p>Upacara pelantikan resmi anggota baru PKS</p>
+                                <div class="timeline-meta">
+                                    <span><i class="fas fa-clock"></i> 07:00 - 09:00</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Aula Sekolah</span>
+                                    <span class="status selesai">Selesai</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">22 Jan</div>
+                            <div class="timeline-content">
+                                <h4>Latihan Gabungan PBB</h4>
+                                <p>Latihan seluruh anggota dengan instruktur</p>
+                                <div class="timeline-meta">
+                                    <span><i class="fas fa-clock"></i> 15:00 - 17:00</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Lapangan Upacara</span>
+                                    <span class="status berjalan">Berjalan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bulan lainnya akan dimuat via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Kerja berdasarkan Jenis -->
+    <section class="program-jenis">
+        <div class="container">
+            <h2 class="section-title">Program Berdasarkan Jenis</h2>
+            
+            <div class="program-cards">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <div class="program-details">
+                        <h3>Program Latihan</h3>
+                        <p>Kegiatan rutin untuk meningkatkan kemampuan anggota</p>
+                        <div class="program-list">
+                            <div class="program-item">
+                                <span class="item-name">Latihan PBB Mingguan</span>
+                                <span class="item-status aktif">Aktif</span>
+                            </div>
+                            <div class="program-item">
+                                <span class="item-name">Latihan Fisik Bulanan</span>
+                                <span class="item-status aktif">Aktif</span>
+                            </div>
+                            <div class="program-item">
+                                <span class="item-name">Pelatihan Kepemimpinan</span>
+                                <span class="item-status rencana">Rencana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="program-details">
+                        <h3>Program Pengabdian</h3>
+                        <p>Kontribusi PKS untuk sekolah dan masyarakat</p>
+                        <div class="program-list">
+                            <div class="program-item">
+                                <span class="item-name">Bakti Sosial Lingkungan</span>
+                                <span class="item-status selesai">Selesai</span>
+                            </div>
+                            <div class="program-item">
+                                <span class="item-name">Pengaturan Lalu Lintas</span>
+                                <span class="item-status aktif">Aktif</span>
+                            </div>
+                            <div class="program-item">
+                                <span class="item-name">Bimbingan Adik Kelas</span>
+                                <span class="item-status rencana">Rencana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="program-details">
+                        <h3>Program Prestasi</h3>
+                        <p>Kegiatan untuk mengukir prestasi organisasi</p>
+                        <div class="program-list">
+                            <div class="program-item">
+                                <span class="item-name">Lomba PBB Antar Sekolah</span>
+                                <span class="item-status rencana">Rencana</span>
+                            </div>
+                            <div class="program-item">
+                                <span class="item-name">Pameran Kegiatan PKS</span>
+                                <span class="item-status aktif">Aktif</span>
+                            </div>
+                            <div class="program-item">
+                                <span class="item-name">Penghargaan Anggota Berprestasi</span>
+                                <span class="item-status aktif">Aktif</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="program-details">
+                        <h3>Program Keanggotaan</h3>
+                        <p>Pengembangan dan pembinaan anggota</p>
+                        <div class="program-list">
+                            <div class="program-item">
+                                <span class="item-name">Rekrutmen Anggota Baru</span>
+                                <span class="item-status selesai">Selesai</span>
+                            </div>
+                            <div class="program-item">
+                                <span class="item-name">Diklat Kepemimpinan</span>
+                                <span class="item-status aktif">Aktif</span>
+                            </div>
+                            <div class="program-item">
+                                <span class="item-name">Evaluasi Tahunan</span>
+                                <span class="item-status rencana">Rencana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Program -->
+    <section class="progress-section">
+        <div class="container">
+            <h2 class="section-title">Progress Program Kerja</h2>
+            
+            <div class="progress-cards">
+                <div class="progress-card">
+                    <div class="progress-header">
+                        <h3>Program Rutin</h3>
+                        <span class="progress-percent">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                    <div class="progress-details">
+                        <span>12 dari 14 program berjalan</span>
+                    </div>
+                </div>
+                
+                <div class="progress-card">
+                    <div class="progress-header">
+                        <h3>Program Khusus</h3>
+                        <span class="progress-percent">60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 60%"></div>
+                    </div>
+                    <div class="progress-details">
+                        <span>6 dari 10 program berjalan</span>
+                    </div>
+                </div>
+                
+                <div class="progress-card">
+                    <div class="progress-header">
+                        <h3>Program Tahunan</h3>
+                        <span class="progress-percent">40%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 40%"></div>
+                    </div>
+                    <div class="progress-details">
+                        <span>2 dari 5 program berjalan</span>
+                    </div>
+                </div>
+                
+                <div class="progress-card">
+                    <div class="progress-header">
+                        <h3>Total Pencapaian</h3>
+                        <span class="progress-percent">72%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 72%"></div>
+                    </div>
+                    <div class="progress-details">
+                        <span>20 dari 29 program berjalan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Program Kerja -->
+    <section class="download-section">
+        <div class="container">
+            <div class="download-card">
+                <div class="download-content">
+                    <h2>Download Program Kerja Lengkap</h2>
+                    <p>Dapatkan file PDF berisi seluruh program kerja PKS periode 2023/2024 termasuk jadwal, anggaran, dan target pencapaian.</p>
+                    <div class="download-info">
+                        <span><i class="far fa-file-pdf"></i> Format: PDF</span>
+                        <span><i class="fas fa-file-alt"></i> Ukuran: 2.5 MB</span>
+                        <span><i class="far fa-calendar"></i> Update: Januari 2023</span>
+                    </div>
+                    <div class="download-buttons">
+                        <a href="#" class="btn-primary">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                        <a href="#" class="btn-secondary">
+                            <i class="fas fa-print"></i> Print Program
+                        </a>
+                    </div>
+                </div>
+                <div class="download-image">
+                    <img src="images/program-doc.jpg" alt="Dokumen Program Kerja">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Logo PKS">
+                    <h3>PATROLI KEAMANAN SEKOLAH</h3>
+                    <p>SMK NEGERI 8 KAB.TANGERANG</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="struktur.html">Struktur Organisasi</a></li>
+                        <li><a href="anggota.html">Data Anggota</a></li>
+                        <li><a href="program.html">Program Kerja</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontak</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Sarwani No.10, Tipar Raya, Kec. Jambe, Kabupaten Tangerang, Banten 15720</p>
+                    <p><i class="fas fa-envelope"></i> pks@sekolahcitrabangsa.sch.id</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Patroli Keamanan Sekolah. Semua Hak Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/main.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
